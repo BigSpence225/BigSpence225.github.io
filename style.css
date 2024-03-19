@@ -3,66 +3,55 @@ body {
 	background-color: white;
 }
 
-#necklace-black-background {
-	max-width: 100%; /* Make the image responsive */
-	max-height: 100%; /* Make the image responsive */
-	height: 60vw;
-	width: 60vw;
+#logo {
+	height: 25vw; /* Adjust height as needed */
+	width: 50vw; /* Adjust width as needed */
 	display: block; /* Ensure the image is treated as a block-level element */
-    margin: 0 auto; /* Set margins to auto to center horizontally */
+	margin: 0 auto; /* Set margins to auto to center horizontally */
 }
 
 /* Styles for portrait orientation */
 @media screen and (orientation: portrait) {
-  #logo {
-		max-width: 50%; /* Make the image responsive */
-		max-height: 50%; /* Make the image responsive */
-		height: 15vw;
-		width: 20vw;
-		display: block; /* Ensure the image is treated as a block-level element */
-		margin: 0 auto; /* Set margins to auto to center horizontally */
-  }
-	
-  #Title1 {
-		color: black;
-		font-size: 10vw;
-		width: 85vw;
-		text-align: center;
-		font-family: garamond;
-		margin: 0 auto; /* Center horizontally by setting left and right margin to auto */
-	}
   
-  #Slogan {
-		color: white;
-		font-size: 3vw;
-		width: 40vw;
+	h1 {
+		color: black;
+		font-size: 7vw;
+		width: 90vw;
 		text-align: center;
 		font-family: garamond;
 		margin: 0 auto;
 	}
   
+	#necklace-black-background {
+		max-width: 100%; /* Make the image responsive */
+		max-height: 100%; /* Make the image responsive */
+		height: 60vw;
+		width: 60vw;
+		display: block; /* Ensure the image is treated as a block-level element */
+		margin: 0 auto; /* Set margins to auto to center horizontally */
+	}
 }
 
 /* Styles for landscape orientation */
 @media screen and (orientation: landscape) {
-    #Title1 {
-		color: black;
-		font-size: 3vw;
-		width: 30vw;
-		text-align: center;
-		font-family: garamond;
-		margin: 0 auto; /* Center horizontally by setting left and right margin to auto */
-	}
   
-	#Slogan {
-		color: white;
-		font-size: 1.5vw;
+	h1 {
+		color: black;
+		font-size: 10vw;
 		width: 40vw;
 		text-align: center;
 		font-family: garamond;
 		margin: 0 auto;
 	}
   
+	#necklace-black-background {
+		max-width: 100%; /* Make the image responsive */
+		max-height: 100%; /* Make the image responsive */
+		height: 60vw;
+		width: 60vw;
+		display: block; /* Ensure the image is treated as a block-level element */
+		margin: 0 auto; /* Set margins to auto to center horizontally */
+	}
 }
 
 
