@@ -10,11 +10,24 @@ body {
 	margin: 0 auto; /* Set margins to auto to center horizontally */
 }
 
+p {
+	margin: 0 auto;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	display: block;
+	color: black;
+	text-align: center;
+	font-family: garamond;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
 /* Styles for portrait orientation */
 @media screen and (orientation: portrait) {
   
 	h1 {
-		color: black;
+		color: darkorange;
 		font-size: 7vw;
 		width: 90vw;
 		text-align: center;
@@ -22,7 +35,7 @@ body {
 		margin: 0 auto;
 	}
   
-	#necklace-black-background {
+	.home-page-pics {
 		max-width: 100%; /* Make the image responsive */
 		max-height: 100%; /* Make the image responsive */
 		height: 60vw;
@@ -36,15 +49,15 @@ body {
 @media screen and (orientation: landscape) {
   
 	h1 {
-		color: black;
-		font-size: 10vw;
-		width: 40vw;
+		color: darkorange;
+		font-size: 6vw;
+		width: 80vw;
 		text-align: center;
 		font-family: garamond;
 		margin: 0 auto;
 	}
   
-	#necklace-black-background {
+	.home-page-pics {
 		max-width: 100%; /* Make the image responsive */
 		max-height: 100%; /* Make the image responsive */
 		height: 60vw;
