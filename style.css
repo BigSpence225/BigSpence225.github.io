@@ -68,6 +68,15 @@ p {
         display: block; /* Ensure the image is treated as a block-level element */
         margin: 0 auto; /* Set margins to auto to center horizontally */
     }
+	
+	#storefront {
+		max-width: 100%; /* Make the image responsive */
+        max-height: 100%; /* Make the image responsive */
+        height: 60vw; /* Adjusted height for laptop/desktop */
+        width: 60vw; /* Adjusted width for laptop/desktop */
+		display: block; /* Ensure the image is treated as a block-level element */
+        margin: 0 auto; /* Set margins to auto to center horizontally */
+    }
 }
 
 /* Media query for landscape orientation */
@@ -101,6 +110,15 @@ p {
         height: 60vw;
         width: 60vw;
         display: block; /* Ensure the image is treated as a block-level element */
+        margin: 0 auto; /* Set margins to auto to center horizontally */
+    }
+	
+	#storefront {
+		max-width: 100%; /* Make the image responsive */
+        max-height: 100%; /* Make the image responsive */
+        height: 60vw; /* Adjusted height for laptop/desktop */
+        width: 60vw; /* Adjusted width for laptop/desktop */
+		display: block; /* Ensure the image is treated as a block-level element */
         margin: 0 auto; /* Set margins to auto to center horizontally */
     }
 }
