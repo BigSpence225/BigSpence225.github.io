@@ -1,71 +1,130 @@
-
 body {
-	background-color: white;
+    background-color: white;
 }
 
 #logo {
-	height: 25vw; /* Adjust height as needed */
-	width: 50vw; /* Adjust width as needed */
-	display: block; /* Ensure the image is treated as a block-level element */
-	margin: 0 auto; /* Set margins to auto to center horizontally */
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
 }
 
+#storefront {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+}
 p {
-	margin: 0 auto;
-	margin-left: 5vw;
-	margin-right: 5vw;
-	display: block;
-	color: black;
-	text-align: center;
-	font-family: garamond;
-	font-weight: bold;
-	font-size: 20px;
+    margin: 0 auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+    color: black;
+    text-align: center;
+    font-family: garamond;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.image-container img {
+    max-width: 100%; /* Make images responsive */
+    margin: 10px; /* Add some spacing between images */
 }
 
 
-/* Styles for portrait orientation */
+/* Media query for portrait orientation */
 @media screen and (orientation: portrait) {
+    #logo {
+        height: 25%; /* Adjusted height for portrait */
+        width: 50%; /* Adjusted width for portrait */
+    }
+
+    h1 {
+        color: darkorange;
+        font-size: 7vw;
+        width: 90vw;
+        text-align: center;
+        font-family: garamond;
+        margin: 0 auto;
+    }
   
-	h1 {
-		color: darkorange;
-		font-size: 7vw;
-		width: 90vw;
-		text-align: center;
-		font-family: garamond;
-		margin: 0 auto;
-	}
+    h2 {
+        color: darkorange;
+        font-size: 5vw;
+        width: 90vw;
+        text-align: center;
+        font-family: garamond;
+        margin: 0 auto;
+    }
   
-	.home-page-pics {
-		max-width: 100%; /* Make the image responsive */
-		max-height: 100%; /* Make the image responsive */
-		height: 60vw;
-		width: 60vw;
-		display: block; /* Ensure the image is treated as a block-level element */
-		margin: 0 auto; /* Set margins to auto to center horizontally */
-	}
+    .home-page-pics {
+        max-width: 100%; /* Make the image responsive */
+        max-height: 100%; /* Make the image responsive */
+        height: 60vw;
+        width: 60vw;
+        display: block; /* Ensure the image is treated as a block-level element */
+        margin: 0 auto; /* Set margins to auto to center horizontally */
+    }
 }
 
-/* Styles for landscape orientation */
+/* Media query for landscape orientation */
 @media screen and (orientation: landscape) {
+    #logo {
+        height: 25%; /* Adjusted height for landscape */
+        width: 50%; /* Adjusted width for landscape */
+    }
+
+    h1 {
+        color: darkorange;
+        font-size: 6vw;
+        width: 80vw;
+        text-align: center;
+        font-family: garamond;
+        margin: 0 auto;
+    }
   
-	h1 {
-		color: darkorange;
-		font-size: 6vw;
-		width: 80vw;
-		text-align: center;
-		font-family: garamond;
-		margin: 0 auto;
-	}
+    h2 {
+        color: darkorange;
+        font-size: 5vw;
+        width: 90vw;
+        text-align: center;
+        font-family: garamond;
+        margin: 0 auto;
+    }
   
-	.home-page-pics {
-		max-width: 100%; /* Make the image responsive */
-		max-height: 100%; /* Make the image responsive */
-		height: 60vw;
-		width: 60vw;
-		display: block; /* Ensure the image is treated as a block-level element */
-		margin: 0 auto; /* Set margins to auto to center horizontally */
-	}
+    .home-page-pics {
+        max-width: 100%; /* Make the image responsive */
+        max-height: 100%; /* Make the image responsive */
+        height: 60vw;
+        width: 60vw;
+        display: block; /* Ensure the image is treated as a block-level element */
+        margin: 0 auto; /* Set margins to auto to center horizontally */
+    }
 }
 
-
+/* Additional styles for laptop/desktop views */
+@media screen and (min-width: 768px) {
+    #logo {
+        height: 150px; /* Adjusted height for laptop/desktop */
+        width: 275px; /* Adjusted width for laptop/desktop */
+    }
+    
+    .home-page-pics {
+        height: 250px; /* Adjusted height for laptop/desktop */
+        width: 250px; /* Adjusted width for laptop/desktop */
+    }
+    
+    .image-container {
+        flex-direction: row; /* Display items horizontally */
+        justify-content: center; /* Center items horizontally */
+    }
+	
+	#storefront {
+        height: 400px; /* Adjusted height for laptop/desktop */
+        width: 500px; /* Adjusted width for laptop/desktop */
+    }
+}
 

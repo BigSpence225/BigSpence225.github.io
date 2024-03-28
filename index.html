@@ -15,10 +15,52 @@
 	<p>Located in Cayo, Belize, we offer an array of souvenirs, handcrafted wooden pieces, and exquisite jewelry. 
 	Explore our curated collection to discover unique treasures that capture the essence of Belizean craftsmanship and beauty.</p>
 	<br><br>
-	<img class="home-page-pics" src="clam-chair-river.jpg" alt="A beautiful hand-made wooden clam chair next to a river">
-	<br><br>
-	<img class="home-page-pics" src="purple-rock.jpg" alt="beautiful hand-crafted jewelry">
+	<div class="image-container">
+		<img class="home-page-pics" src="clam-chair-river.jpg" alt="A beautiful hand-made wooden clam chair next to a river">
+		<img class="home-page-pics" src="rock-face.jpg" alt="blue gems placed on a girl's face to show their beauty">
+		<img class="home-page-pics" src="wood-vase.jpg" alt="a well-crafted wooden vase">
+	</div>
 	<br>
+	
+	<h2>Locations</h2>
+    <p>Mile 60 George Price Highway<br>
+	Cayo, Belize</p>
+	<br>
+	<p>Mile 60 George Price Highway<br>
+	Cayo, Belize</p>
+	<br><br>
+	
+    <h2>Hours</h2>
+    <p>Every day: 8:00 AM - 5:00 PM</p>
+    <br><br>
+    <img id="storefront" src="storefront.jpg" alt="Storefront">
+    
+    <!-- Google Maps Section -->
+    <h2>Map</h2>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 40.7128, lng: -74.0060}, // Change these coordinates to your store's location
+                zoom: 15
+            });
+            var marker = new google.maps.Marker({
+                position: {lat: 40.7128, lng: -74.0060}, // Change these coordinates to your store's location
+                map: map,
+                title: 'Our Store'
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+	
+	
+	
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="contactus.html">location</a></li>
+		<!-- Add other navigation links as needed -->
+	</ul>
+
 	
 </body>
 </html>
