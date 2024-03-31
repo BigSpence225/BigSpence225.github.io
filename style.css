@@ -11,6 +11,7 @@ body {
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
 }
+
 p {
     margin: 0 auto;
     margin-left: 5vw;
@@ -89,8 +90,8 @@ p {
     .home-page-pics {
         max-width: 100%; /* Make the image responsive */
         max-height: 100%; /* Make the image responsive */
-        height: 60vw;
-        width: 60vw;
+        height: 75vw;
+        width: 75vw;
         display: block; /* Ensure the image is treated as a block-level element */
         margin: 0 auto; /* Set margins to auto to center horizontally */
     }
