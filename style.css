@@ -7,6 +7,36 @@ body {
     margin: 0 auto; /* Center the logo horizontally */
 }
 
+header {
+  background-color: white;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: black;
+  font-family: Roboto;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: darkorange;
+}
+
 #storefront {
     display: block;
     margin: 0 auto; /* Center the logo horizontally */
@@ -108,10 +138,30 @@ p {
 	/* Always set the map height explicitly to define the size of the div
 	 * element that contains the map. */
 	.map{
-	  height: 40vw;
-	  width: 75%;
-	  margin: 0 auto;
+		height: 40vw;
+		width: 75%;
+		margin: 0 auto;
 	}
+	
+	.menu-toggle {
+		display: block; /* Show the menu toggle button */
+	}
+  
+	nav ul {
+		display: none; /* Hide the menu by default */
+		text-align: center;
+	}
+
+	nav ul.open {
+		display: block; /* Show the menu when toggled */
+	}
+
+	nav ul li {
+		display: block; /* Display menu items vertically */
+	}
+}
+	
+	
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
     #logo {
