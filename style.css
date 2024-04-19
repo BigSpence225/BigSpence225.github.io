@@ -61,6 +61,46 @@ p {
 	cursor: pointer;
 }
 
+.contactusform {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactusform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contactusform input[type="text"],
+.contactusform input[type="email"],
+.contactusform input[type="tel"],
+.contactusform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contactusform input[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactusform input[type="submit"]:hover {
+    background-color: #ff8c00;
+}
+
+
 
 /* Media query for portrait orientation */
 @media screen and (max-width: 767px) and (orientation: portrait) {
