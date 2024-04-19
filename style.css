@@ -27,6 +27,7 @@ nav ul li a {
   color: black;
   font-family: Roboto;
   font-weight: bold;
+  font-size: 20px;
   text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
@@ -34,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: darkorange;
+  color: darkorange;
 }
 
 #storefront {
@@ -89,6 +90,10 @@ p {
 	font-size: 18px;
 	border-radius: 20px;
 	cursor: pointer;
+}
+
+.menu-toggle {
+	display: none; /* Do not show the menu toggle button */
 }
 
 .contactusform {
@@ -182,11 +187,21 @@ p {
 		width: 75%;
 		margin: 0 auto;
 	}
-	
+
 	.menu-toggle {
-		display: block; /* Show the menu toggle button */
+		display: inline-block; /* Change to inline-block to restrict width */
+		font-size: 20px; /* Adjust the font size to make the hamburger menu bigger */
+		line-height: .75; /* Reset the line height to prevent extra spacing */
+		padding: 10px; /* Add padding around the icon for spacing */
+		border: 1.5px solid #333; /* Add a solid border around the icon */
+		border-radius: 5px; /* Add border-radius for rounded corners */
 	}
-  
+	
+	.menu-container {
+		position: relative; /* Position the container relative to the viewport */
+		left: 15px; /* Adjust the left position to push the container away from the left side */
+}
+
 	nav ul {
 		display: none; /* Hide the menu by default */
 		text-align: center;
@@ -278,7 +293,7 @@ p {
 	
 	h1 {
         color: darkorange;
-        font-size: 5vw;
+        font-size: 4vw;
         width: 80vw;
         text-align: center;
         font-family: garamond;
