@@ -40,7 +40,18 @@ nav ul li a:hover {
 
 #storefront {
     display: block;
-    margin: 0 auto; /* Center the logo horizontally */
+    margin: 0 25% 0 10%; /* Adjust margins to move the picture more to the left */
+    width: 100%; /* Set the width to fill the available space */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+#family {
+    display: block;
+    margin: 0 auto 0 75%; /* Set left margin to 50% */
+    transform: translateX(-50%); /* Use transform to center horizontally */
+    width: 100%; /* Set the width to fill the available space */
+    max-width: 250px; /* Set a maximum width to maintain aspect ratio */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
 }
 
 p {
