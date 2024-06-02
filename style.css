@@ -327,5 +327,45 @@ p {
 	  width: 25%;
 	  margin: 0 auto;
 	}
+	
+.AboutText1 {
+    font-size: 15px;
+    flex: 1 1 50%; /* Take up 50% of the container */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    padding-right: 20px; /* Add some padding to the right to create space between text and image */
+	font-family: Helvetica;
+}
+
+.AboutImage1 {
+    width: auto; /* Allow the width to adjust automatically */
+    height: auto; /* Maintain aspect ratio */
+    flex: 1 1 40%; /* Adjust the flex-basis to 40% for a slightly larger image */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+.AboutSection1 {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container */
+    justify-content: center; /* Center content horizontally within the container */
+    width: 80%; /* Adjust the width to your preference */
+    margin: 0 auto; /* Center the container itself */
+}
+
+h3 {
+    color: darkorange;
+    font-size: 3vw;
+    width: 100%; /* Adjust the width to take full container space */
+    text-align: left;
+    font-family: garamond;
+    margin: 0 0 10px 0; /* Add bottom margin to create space below the header */
+    padding-left: 65px; /* Add left padding to move the header slightly to the right */
+}
+
+
+.AboutText1 > p {
+    text-align: left; /* Ensure paragraphs are aligned to the left */
+}
+
+
 }
 
